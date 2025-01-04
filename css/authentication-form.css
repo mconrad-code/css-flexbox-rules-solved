@@ -11,7 +11,10 @@ body {
 }
 
 .content {
-  padding: 30px;
+  padding: 30px; 
+  display: flex; 
+  gap: 50px; 
+
 }
 
 h2 {
@@ -26,7 +29,7 @@ p {
 
 form {
   border: 1px solid #a9a9a9;
-  padding: 20px;
+  padding: 20px; 
 }
 
 .subtext {
@@ -44,10 +47,6 @@ a {
   text-decoration: none;
 }
 
-label {
-  font-weight: bold;
-}
-
 input {
   width: 100%;
   height: 30px;
@@ -62,8 +61,8 @@ input[type="radio"] {
 }
 
 input[type="submit"] {
-  width: unset;
-  height: unset;
+  width: 100px;
+  height: 50px;
   padding: 14px 20px;
   background: #335eea;
   color: white;
@@ -74,12 +73,57 @@ input[type="submit"] {
   outline: none;
   clear: left;
   cursor: pointer;
+
+
 }
 
 input[type="submit"]:hover {
   background: #294bbb;
 }
 
-.form select {
+.row {
+  display: flex; 
+  flex-direction:  column; 
+  gap: 6px; 
+  padding: 15px; 
+  
+}
+.text-like {
+  font-weight: bold;
+}
+label {
+  font-weight: normal; 
+}
+.tl-input {
+  height: 30px; 
+}
+select {
   height: 30px;
+  width: 275px; 
+}
+
+.submit {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group-horizontal-control {
+  display: flex; 
+  justify-content: space-between;
+}
+.form-radio-control {
+  padding: 0px 0px 2px 15px; 
+}
+.label {
+  padding: 0px 0px 5px 15px; 
+  font-weight: normal; 
+}
+hr {
+  padding: 5px; 
+  border-bottom: none;
+  border-left: none; 
+  border-right: none;
+}
+.form-checkbox-control {
+  padding: 15px;
 }

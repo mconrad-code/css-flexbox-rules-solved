@@ -30,32 +30,43 @@
         <!-- Sign IN form starts here -->
         <form id="sign-in-form" action="">
           <div class="form-input-control">
-            <label for="login-field">Login</label>
-            <input
-              type="email"
-              id="login-field"
-              placeholder="use your email as login"
-              required
-            />
+            <div class="row">
+              <label for="login-field" class="text-like">Login</label>
+              <input
+                class="tl-input"
+                type="email"
+                id="login-field"
+                placeholder="use your email as login"
+                required
+              />
+            </div>
           </div>
           <div class="form-input-control">
-            <label for="password-field">Password</label>
-            <input
-              type="password"
-              id="password-field"
-              placeholder="passwords must match"
-              minlength="8"
-              required
-            />
-          </div>
-          <div class="form-checkbox-control">
-            <input type="checkbox" id="stay-signed-in" />
-            <label for="stay-signed-in">Stay signed in</label>
-          </div>
-          <hr />
-          <div class="form-submit-control">
-            <input type="submit" value="Sign in" />
-            <a href="/#">Forgot your password?</a>
+            <div class="row">
+              <label for="password-field" class="text-like">Password</label>
+              <input
+                class="tl-input"
+                type="password"
+                id="password-field"
+                placeholder="Minimum 8 Characters"
+                minlength="8"
+                maxlength="20"
+                required
+              />
+            </div>
+            <div class="form-checkbox-control">
+              <input type="checkbox" id="stay-signed-in" />
+              <label for="stay-signed-in" value="stay-signed-in"
+                >Stay signed in</label
+              >
+            </div>
+            <hr />
+            <div class="form-submit-control">
+              <div class="row submit">
+                <input type="submit" value="Sign in" />
+                <a href="/#">Forgot your password?</a>
+              </div>
+            </div>
           </div>
         </form>
         <!-- Sign IN form ends here -->
@@ -68,82 +79,106 @@
         <!-- Sign UP form starts here -->
         <form id="sign-up-form" action="">
           <div class="form-input-control">
-            <label for="name-field">Your name</label>
-            <input
-              type="text"
-              id="name-field"
-              minlength="5"
-              placeholder="ex.: John Doe"
-              required
-            />
+            <div class="row">
+              <label for="name-field" class="text-like">Your name</label>
+              <input
+                class="tl-input"
+                type="text"
+                id="name-field"
+                minlength="5"
+                placeholder="ex.: John Doe"
+                required
+              />
+            </div>
           </div>
           <div class="form-input-control">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="name@domain.zone"
-              required
-            />
+            <div class="row">
+              <label for="email" class="text-like">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="name@domain.zone"
+                class="tl-input"
+                required
+              />
+            </div>
           </div>
           <div class="form-input-control">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="8 characters minimum"
-              minlength="8"
-              maxlength="20"
-              required
-            />
+            <div class="row">
+              <label for="password" class="text-like">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="8 characters minimum"
+                minlength="8"
+                maxlength="20"
+                class="tl-input"
+                required
+              />
+            </div>
           </div>
           <div class="form-input-control">
-            <label for="confirm-password">Confirm Password</label>
-            <input
-              type="password"
-              id="confirm-password"
-              placeholder="passwords must match"
-              minlength="8"
-              maxlength="20"
-              required
-            />
+            <div class="row">
+              <label for="confirm-password" class="text-like"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="passwords must match"
+                minlength="8"
+                maxlength="20"
+                class="tl-input"
+                required
+              />
+            </div>
           </div>
           <div class="form-input-control">
-            <label for="phone">Phone number</label>
-            <input
-              type="tel"
-              id="phone"
-              minlength="12"
-              maxlength="12"
-              placeholder="ex.: +12336456355"
-            />
+            <div class="row">
+              <label for="phone" class="text-like">Phone number</label>
+              <input
+                type="tel"
+                id="phone"
+                minlength="12"
+                maxlength="12"
+                placeholder="ex.: +123456789"
+                class="tl-input"
+                required
+              />
+            </div>
           </div>
           <div class="form-input-control">
-            <label for="avatar">Avatar</label>
-            <input type="file" id="avatar" />
+            <div class="row">
+              <label for="avatar">Avatar</label>
+              <input type="file" id="avatar" />
+            </div>
           </div>
           <div class="form-group-horizontal-control">
             <div class="form-input-control">
-              <label for="state">State</label>
-              <select id="state">
-                <option value="" disabled selected>Select your state</option>
-                <option value="TX">Texas</option>
-                <option value="IA">Iowa</option>
-                <option value="SD">South Dakota</option>
-              </select>
+              <div class="row">
+                <label for="state" class="dropdown">State</label>
+                <select id="state">
+                  <option value="" disabled selected>Select your state</option>
+                  <option value="TX">Texas</option>
+                  <option value="IA">Iowa</option>
+                  <option value="SD">South Dakota</option>
+                </select>
+              </div>
             </div>
             <div class="form-input-control">
-              <label for="state">City</label>
-              <select id="state">
-                <option value="" disabled selected>Select your city</option>
-                <option value="new-york">New York</option>
-                <option value="washington">Washington DC</option>
-                <option value="dallas">Dallas</option>
-              </select>
+              <div class="row">
+                <label for="city" class="dropdown">City</label>
+                <select id="city">
+                  <option value="" disabled selected>Select your city</option>
+                  <option value="new-york">New York</option>
+                  <option value="washington">Washington DC</option>
+                  <option value="dallas">Dallas</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="form-input-control">
-            <p>Gender</p>
+            <p class="label">Gender</p>
             <div class="form-group-vertical-control">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />
@@ -167,7 +202,9 @@
           </div>
           <hr />
           <div class="form-submit-control">
-            <input type="submit" value="Sign up" />
+            <div class="row submit">
+              <input type="submit" value="Sign up" />
+            </div>
           </div>
         </form>
         <!-- Sign UP form ends here -->
